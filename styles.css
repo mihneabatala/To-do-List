@@ -1,0 +1,141 @@
+:root{
+    --color1:#4C191B;
+    --color2:#963D5A;
+    --color3:#C589E8;
+    --color4:#E3DAFF;
+    --color5:#ECFFF8;
+}
+*,::after,::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color1);
+}
+.container{
+    position: relative;
+    width: 800px;
+    min-height: 480px;
+    background-color: var(--color5);
+    margin:25rem auto;
+    border-radius: 3rem;
+    padding-bottom: 1.2rem;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+h2{
+    font-size: 4rem;
+    color: var(--color2);
+}
+img{
+    width: 8rem;
+    padding-left: 1rem;
+}
+.submit{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color1);
+    border-radius: 3rem;
+    margin: 1rem auto;
+}
+input{
+    flex: 1;
+    background: transparent;
+    font-size: 3rem;
+    height: 6rem;
+    border: none;
+    outline: none;
+    margin-left: 3rem;
+    color: var(--color5);
+}
+button{
+    border: none;
+    outline: none;
+    width: 10rem;
+    font-size: 3rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+}
+button:hover{
+    background: #a14766;
+}
+
+.list{
+    width: 80%;
+    font-size: 2.5rem;
+    margin: 3rem auto;
+    list-style: none;
+    position: relative;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    background:#8b5658;
+    color: var(--color5);
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    position: relative;
+}
+.task-btn{
+    border: none;
+    outline: none;
+    width: 5rem;
+    font-size: 2rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background: var(--color2);
+    color: var(--color4);
+    cursor: pointer;
+
+}
+.clear-btn{
+    width: 100%;
+    height: 4rem;
+}
+.clear-btn button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+}
+
+@media only screen and (max-width:600px) {
+    .container{
+        width: 80%;
+        min-height: 250px;
+        overflow: hidden;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    html{
+        font-size: 5px;
+    }
+    
+}
+
+
